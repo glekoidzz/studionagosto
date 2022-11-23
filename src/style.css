@@ -103,7 +103,7 @@ ul {
 
 .slide {
     position: relative;
-    height: calc(100vh - 7.75rem);
+    height: calc(90vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -146,7 +146,7 @@ ul {
     font-size: .9375rem;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.5s all ease;
+    transition: 0.3s all ease;
 }
 
 .btn:hover,
@@ -168,7 +168,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-items: center;
-    margin: 0;
     padding: 4.375rem 1rem;
 }
 
@@ -187,6 +186,9 @@ ul {
     gap: 3.125rem;
     align-content: center;
     padding: 4.375rem;
+}
+.institutional__image {
+    max-width: 550px;
 }
 
 .institutional__copy {
@@ -217,5 +219,25 @@ ul {
 .btn--institutional:hover {
     color: var(--color-copy);
     background: unset;
+    box-shadow: 0 1rem 1rem #0006; /* X, Y, blur, cor */
     }
 
+.quote {
+    background-image: url(./images/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+
+}
